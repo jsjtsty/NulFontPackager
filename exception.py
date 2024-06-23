@@ -1,0 +1,2 @@
+class NulException(Exception):
+    pass

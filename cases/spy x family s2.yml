@@ -1,0 +1,47 @@
+version: 1
+
+fonts:
+  workspaces:
+    - 'F:\Movies\Spy x Family S2\SPY×FAMILY S2 Nekomoe kissaten Fonts'
+
+process:
+  workspace: 'F:\Movies\Spy x Family S2'
+  targets:
+    - media: '[Moozzi2] Spy x Family S2 - 01 [ 26 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [26][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 01.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 02 [ 27 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [27][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 02.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 03 [ 28 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [28][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 03.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 04 [ 29 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [29][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 04.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 05 [ 30 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [30][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 05.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 06 [ 31 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [31][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 06.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 07 [ 32 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [32][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 07.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 08 [ 33 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [33][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 08.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 09 [ 34 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [34][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 09.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 10 [ 35 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [35][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 10.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 11 [ 36 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [36][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 11.mkv'
+    - media: '[Moozzi2] Spy x Family S2 - 12 END [ 37 ] (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] SPYxFAMILY [37][Web].JPSC.ass'
+      output: 'Spy x Family S2 - 12.mkv'
+  options:
+    aac: false
