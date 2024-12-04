@@ -1,10 +1,9 @@
 import os.path
+import warnings
 from typing import Any
 
 from fontTools.subset import Subsetter
-from fontTools.ttLib import TTFont, TTCollection
-
-from exception import NulException
+from fontTools.ttLib import TTFont, TTCollection, TTLibError
 
 
 def build_font_information(font_path: str) -> list[dict[str, Any]]:
@@ -14,12 +13,15 @@ def build_font_information(font_path: str) -> list[dict[str, Any]]:
     is_collection: bool = False
     fonts: list[TTFont] = []
 
-    if file_name.endswith('.ttc'):
-        is_collection = True
-        collection: TTCollection = TTCollection(font_path)
-        fonts = collection.fonts
-    else:
-        fonts.append(TTFont(font_path))
+    try:
+        if file_name.lower().endswith('.ttc'):
+            is_collection = True
+            collection: TTCollection = TTCollection(font_path)
+            fonts = collection.fonts
+        else:
+            fonts.append(TTFont(font_path))
+    except TTLibError:
+        warnings.warn('Warning: Cannot read font file: {}'.format(file_name))
 
     for index, font in enumerate(fonts):
         current_result: dict[str, Any] = {'collection': is_collection, 'path': font_path}
@@ -50,7 +52,7 @@ def create_font_subset(font_info: dict, charset: set[str]) -> str:
         for s in strings:
             if s.isascii():
                 return s
-        raise NulException('Invalid name table')
+        return strings[0]
 
     is_collection: bool = font_info['collection']
     if is_collection:
@@ -70,7 +72,12 @@ def create_font_subset(font_info: dict, charset: set[str]) -> str:
 
     font['name'].names = names
 
-    output: str = get_output_name(font_info['names']) + font_info['path'][-4:].lower()
+    font_ext: str = font_info['path'][-4:].lower()
+
+    if font_ext == '.ttc':
+        font_ext = '.ttf'
+
+    output: str = get_output_name(font_info['names']) + font_ext
     font.save(output, reorderTables=False)
 
     return output
