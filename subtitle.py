@@ -26,6 +26,8 @@ def build_char_map(ass_path: str) -> dict[str, set[str]]:
             continue
 
         font_name: str = style_map[style_name]
+        if font_name.startswith('@'):
+            font_name = font_name[1:]
 
         start: int = 0
 
@@ -42,6 +44,8 @@ def build_char_map(ass_path: str) -> dict[str, set[str]]:
             fn_match = fn_pattern.search(matched_string)
             if fn_match:
                 font_name = fn_match.group(1)
+                if font_name.startswith('@'):
+                    font_name = font_name[1:]
 
         text = event.text[start:]
 

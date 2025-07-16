@@ -1,0 +1,48 @@
+version: 1
+
+fonts:
+  workspaces:
+    - 'F:\Movies\BOCCHI THE ROCK!\Fonts'
+    - 'C:\Windows\Fonts'
+
+process:
+  workspace: 'F:\Movies\BOCCHI THE ROCK!'
+  targets:
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [01][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [01][Web].SC.ass'
+      output: 'Bocchi the Rock! - 01.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [02][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [02][Web].SC.ass'
+      output: 'Bocchi the Rock! - 02.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [03][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [03][Web].SC.ass'
+      output: 'Bocchi the Rock! - 03.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [04][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [04][Web].SC.ass'
+      output: 'Bocchi the Rock! - 04.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [05][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [05][Web].SC.ass'
+      output: 'Bocchi the Rock! - 05.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [06][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [06][Web].SC.ass'
+      output: 'Bocchi the Rock! - 06.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [07][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [07][Web].SC.ass'
+      output: 'Bocchi the Rock! - 07.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [08][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [08][Web].SC.ass'
+      output: 'Bocchi the Rock! - 08.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [09][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [09][Web].SC.ass'
+      output: 'Bocchi the Rock! - 09.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [10][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [10][Web].SC.ass'
+      output: 'Bocchi the Rock! - 10.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [11][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [11][Web].SC.ass'
+      output: 'Bocchi the Rock! - 11.mkv'
+    - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [12][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Nekomoe kissaten] Bocchi the Rock! [12][Web].SC.ass'
+      output: 'Bocchi the Rock! - 12.mkv'
+  options:
+    aac: false

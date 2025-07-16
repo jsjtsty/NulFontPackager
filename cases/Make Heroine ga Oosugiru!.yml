@@ -1,0 +1,48 @@
+version: 1
+
+fonts:
+  workspaces:
+    - 'F:\Movies\Make Heroine ga Oosugiru!\Fonts'
+    - 'C:\Windows\Fonts'
+
+process:
+  workspace: 'F:\Movies\Make Heroine ga Oosugiru!'
+  targets:
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 01 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [01][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 01.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 02 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [02][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 02.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 03 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [03][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 03.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 04 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [04][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 04.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 05 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [05][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 05.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 06 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [06][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 06.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 07 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [07][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 07.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 08 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [08][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 08.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 09 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [09][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 09.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 10 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [10][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 10.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 11 (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [11][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 11.mkv'
+    - media: '[Moozzi2] Make Heroine ga Oosugiru! - 12 END (BD 1920x1080 x265-10Bit FLACx2).mkv'
+      subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [12][WebRip].JPSC.ass'
+      output: 'Make Heroine ga Oosugiru! - 12.mkv'
+  options:
+    aac: false

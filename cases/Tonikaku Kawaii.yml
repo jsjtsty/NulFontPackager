@@ -1,0 +1,51 @@
+version: 1
+
+fonts:
+  workspaces:
+    - 'F:\Movies\Tonikaku Kawaii\Fonts'
+    - 'C:\Windows\Fonts'
+
+process:
+  workspace: 'F:\Movies\Tonikaku Kawaii'
+  targets:
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [01][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [01][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 01.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [02][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [02][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 02.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [03][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [03][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 03.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [04][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [04][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 04.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [05][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [05][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 05.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [06][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [06][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 06.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [07][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [07][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 07.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [08][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [08][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 08.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [09][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [09][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 09.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [10][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [10][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 10.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [11][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [11][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 11.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [12][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [12][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 12.mkv'
+    - media: '[Nekomoe kissaten] Tonikaku Kawaii [13][BDRip 1080p HEVC-10bit FLAC].mkv'
+      subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [13][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
+      output: 'Tonikaku Kawaii - 13.mkv'
+  options:
+    aac: false

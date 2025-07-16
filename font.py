@@ -78,6 +78,6 @@ def create_font_subset(font_info: dict, charset: set[str]) -> str:
         font_ext = '.ttf'
 
     output: str = get_output_name(font_info['names']) + font_ext
-    font.save(output, reorderTables=False)
+    font.save(output)
 
     return output

@@ -1,0 +1,51 @@
+version: 1
+
+fonts:
+  workspaces:
+    - 'F:\Movies\ATRI My Dear Moments\Fonts'
+    - 'C:\Windows\Fonts'
+
+process:
+  workspace: 'F:\Movies\ATRI My Dear Moments'
+  targets:
+    - media: '[Moozzi2] ATRI My Dear Moments - 01 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [01][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 01.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 02 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [02][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 02.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 03 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [03][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 03.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 04 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [04][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 04.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 05 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [05][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 05.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 06 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [06][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 06.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 07 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [07][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 07.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 08 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [08][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 08.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 09 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [09][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 09.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 10 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [10][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 10.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 11 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [11][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 11.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 12 (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [12][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 12.mkv'
+    - media: '[Moozzi2] ATRI My Dear Moments - 13 END (BD 1920x1080 x265-10Bit Flac).mkv'
+      subtitle: '[Nekomoe kissaten] Atri - My Dear Moments [13][WebRip].JPSC.ass'
+      output: 'ATRI -My Dear Moments- - 13.mkv'
+  options:
+    aac: false

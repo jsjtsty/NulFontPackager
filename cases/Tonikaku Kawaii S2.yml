@@ -1,0 +1,48 @@
+version: 1
+
+fonts:
+  workspaces:
+    - 'F:\Movies\Tonikaku Kawaii 2\Tonikaku Kawaii S2\Fonts'
+    - 'C:\Windows\Fonts'
+
+process:
+  workspace: 'F:\Movies\Tonikaku Kawaii 2\Tonikaku Kawaii S2'
+  targets:
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [01][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [01][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 01.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [02][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [02][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 02.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [03][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [03][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 03.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [04][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [04][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 04.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [05][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [05][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 05.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [06][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [06][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 06.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [07][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [07][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 07.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [08][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [08][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 08.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [09][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [09][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 09.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [10][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [10][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 10.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [11][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [11][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 11.mkv'
+    - media: '[VCB-Studio] Tonikaku Kawaii S2 [12][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[Sakurato] Tonikaku Kawaii S2 [12][HEVC-10bit 1080p AAC][CHS].ass'
+      output: 'Tonikaku Kawaii S2 - 12.mkv'
+  options:
+    aac: false

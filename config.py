@@ -24,7 +24,7 @@ def find_process_font_paths(parsed_config: dict) -> list[str]:
 
     fonts: dict = get_value_or_except(parsed_config, 'fonts', NulException('No fonts in config file'))
     workspaces: list[str] = get_value_or_default(fonts, 'workspaces', [])
-    additional_fonts: list[str] = get_value_or_default(parsed_config, 'additional_fonts', [])
+    additional_fonts: list[str] = get_value_or_default(fonts, 'additional_fonts', [])
 
     # Check validity of additional fonts.
     for font_path in additional_fonts:

@@ -1,0 +1,12 @@
+version: 1
+
+fonts:
+  workspaces:
+    - 'F:\Movies\Gekijouban Karakai Jouzu no Takagi-san\Fonts'
+
+process:
+  workspace: 'F:\Movies\Gekijouban Karakai Jouzu no Takagi-san'
+  targets:
+    - media: 'Test.mkv'
+      subtitle: 'Gekijouban Karakai Jouzu no Takagi-san.sc.ass'
+      output: 'Gekijouban Karakai Jouzu no Takagi-san SUBTITLED.mkv'

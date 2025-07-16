@@ -1,0 +1,47 @@
+version: 1
+
+fonts:
+  workspaces:
+    - 'F:\Movies\Tsuki ga Kirei\Font'
+
+process:
+  workspace: 'F:\Movies\Tsuki ga Kirei'
+  targets:
+    - media: 'Tsuki ga Kirei [01].mkv'
+      subtitle: '月がきれい - 01.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 01.mkv'
+    - media: 'Tsuki ga Kirei [02].mkv'
+      subtitle: '月がきれい - 02.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 02.mkv'
+    - media: 'Tsuki ga Kirei [03].mkv'
+      subtitle: '月がきれい - 03.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 03.mkv'
+    - media: 'Tsuki ga Kirei [04].mkv'
+      subtitle: '月がきれい - 04.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 04.mkv'
+    - media: 'Tsuki ga Kirei [05].mkv'
+      subtitle: '月がきれい - 05.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 05.mkv'
+    - media: 'Tsuki ga Kirei [06].mkv'
+      subtitle: '月がきれい - 06.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 06.mkv'
+    - media: 'Tsuki ga Kirei [07].mkv'
+      subtitle: '月がきれい - 07.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 07.mkv'
+    - media: 'Tsuki ga Kirei [08].mkv'
+      subtitle: '月がきれい - 08.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 08.mkv'
+    - media: 'Tsuki ga Kirei [09].mkv'
+      subtitle: '月がきれい - 09.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 09.mkv'
+    - media: 'Tsuki ga Kirei [10].mkv'
+      subtitle: '月がきれい - 10.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 10.mkv'
+    - media: 'Tsuki ga Kirei [11].mkv'
+      subtitle: '月がきれい - 11.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 11.mkv'
+    - media: 'Tsuki ga Kirei [12].mkv'
+      subtitle: '月がきれい - 12.chs_jap.ass'
+      output: 'Tsuki ga Kirei - 12.mkv'
+  options:
+    aac: false

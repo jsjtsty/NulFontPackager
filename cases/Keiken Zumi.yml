@@ -1,0 +1,48 @@
+version: 1
+
+fonts:
+  workspaces:
+    - 'F:\Movies\Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi\Fonts'
+
+process:
+  workspace: 'F:\Movies\Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi'
+  targets:
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [01][Ma10p_1080p][x265_flac_aac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [01][Ma10p_1080p][x265_flac_aac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 01.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [07][Ma10p_1080p][x265_flac_aac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [07][Ma10p_1080p][x265_flac_aac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 07.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [08][Ma10p_1080p][x265_flac_aac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [08][Ma10p_1080p][x265_flac_aac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 08.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [11][Ma10p_1080p][x265_flac_aac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [11][Ma10p_1080p][x265_flac_aac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 11.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [12][Ma10p_1080p][x265_flac_aac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [12][Ma10p_1080p][x265_flac_aac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 12.mkv'
+
+    - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [02][Ma10p_1080p][x265_flac_aac].mkv'
+      subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [02][Ma10p_1080p][x265_flac_aac].sc.ass'
+      output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 02.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [03][Ma10p_1080p][x265_flac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [03][Ma10p_1080p][x265_flac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 03.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [04][Ma10p_1080p][x265_flac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [04][Ma10p_1080p][x265_flac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 04.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [05][Ma10p_1080p][x265_flac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [05][Ma10p_1080p][x265_flac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 05.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [06][Ma10p_1080p][x265_flac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [06][Ma10p_1080p][x265_flac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 06.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [09][Ma10p_1080p][x265_flac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [09][Ma10p_1080p][x265_flac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 09.mkv'
+    # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [10][Ma10p_1080p][x265_flac].mkv'
+    #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [10][Ma10p_1080p][x265_flac].sc.ass'
+    #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 10.mkv'
+  options:
+    aac: false
