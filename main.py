@@ -1,6 +1,7 @@
 import argparse
 import collections
 import os
+import tempfile
 import warnings
 from typing import Any
 
@@ -73,13 +74,14 @@ def main() -> None:
                     result_map[index].update(char_map[name])
                     designated_fonts.add(name)
 
-        font_list: list[str] = []
-        for index, charset in result_map.items():
-            font_list.append(create_font_subset(library[index], charset))
+        with tempfile.TemporaryDirectory(prefix='nul-font-packager-') as temp_dir:
+            font_list: list[str] = []
+            for index, charset in result_map.items():
+                font_list.append(create_font_subset(library[index], charset, temp_dir))
 
-        command: str = generate_command(task, font_list, aac)
-        print(command)
-        os.system(command)
+            command: str = generate_command(task, font_list, aac)
+            print(command)
+            os.system(command)
 
 
 if __name__ == '__main__':

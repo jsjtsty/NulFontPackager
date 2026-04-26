@@ -1,3 +1,4 @@
+import os
 import os.path
 import warnings
 from typing import Any
@@ -47,12 +48,18 @@ def build_font_library(font_paths: list[str]) -> list[dict[str, Any]]:
     return result
 
 
-def create_font_subset(font_info: dict, charset: set[str]) -> str:
+def create_font_subset(font_info: dict, charset: set[str], output_dir: str | None = None) -> str:
     def get_output_name(strings: list[str]) -> str:
         for s in strings:
             if s.isascii():
                 return s
         return strings[0]
+
+    def get_safe_file_name(file_name: str) -> str:
+        result = file_name.replace(os.sep, '_')
+        if os.altsep is not None:
+            result = result.replace(os.altsep, '_')
+        return result
 
     is_collection: bool = font_info['collection']
     if is_collection:
@@ -77,7 +84,18 @@ def create_font_subset(font_info: dict, charset: set[str]) -> str:
     if font_ext == '.ttc':
         font_ext = '.ttf'
 
-    output: str = get_output_name(font_info['names']) + font_ext
+    output_name: str = get_safe_file_name(get_output_name(font_info['names']) + font_ext)
+    if output_dir is not None:
+        os.makedirs(output_dir, exist_ok=True)
+        output = os.path.join(output_dir, output_name)
+        index = 1
+        while os.path.exists(output):
+            name, ext = os.path.splitext(output_name)
+            output = os.path.join(output_dir, f'{name}-{index}{ext}')
+            index += 1
+    else:
+        output = output_name
+
     font.save(output)
 
     return output
