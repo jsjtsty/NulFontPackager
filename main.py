@@ -18,9 +18,9 @@ def generate_command(task: dict, font_list: list[str], aac: bool = False) -> str
     for index, font in enumerate(font_list):
         font_type = font[-3:]
         if font_type == 'ttf':
-            mime = 'application/x-truetype-font'
+            mime = 'font/ttf'
         elif font_type == 'otf':
-            mime = 'application/vnd.ms-opentype'
+            mime = 'font/otf'
         else:
             raise RuntimeError(f'Unknown font type: {font_type}')
         command = f'-attach "{font}" -metadata:s:t:{index} mimeType="{mime}" '

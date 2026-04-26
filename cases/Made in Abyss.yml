@@ -1,0 +1,55 @@
+version: 1
+
+fonts:
+  # 设置 Mac 下的字体搜索路径
+  workspaces:
+    - '/Volumes/T7S-Personal/Downloads/[SweetSub&VCB-Studio] Made in Abyss [Ma10p_1080p]/Fonts' # 该番剧自带的字体包
+    - '/Library/Fonts' # Mac 系统字体
+    - '/Users/nullsty/Library/Fonts' # 用户个人字体
+
+process:
+  # 视频和字幕文件所在的根目录
+  workspace: '/Volumes/T7S-Personal/Downloads/[SweetSub&VCB-Studio] Made in Abyss [Ma10p_1080p]'
+  targets:
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [01][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [01][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 01.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [02][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [02][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 02.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [03][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [03][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 03.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [04][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [04][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 04.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [05][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [05][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 05.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [06][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [06][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 06.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [07][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [07][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 07.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [08][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [08][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 08.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [09][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [09][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 09.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [10][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [10][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 10.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [11][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [11][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 11.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [12][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [12][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 12.mkv'
+    - media: '[SweetSub&VCB-Studio] Made in Abyss [13][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss [13][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss - 13.mkv'
+  options:
+    # 保持 VCB 的原始 FLAC 音频，不进行 AAC 转码
+    aac: false
