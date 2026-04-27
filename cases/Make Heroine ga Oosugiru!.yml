@@ -44,5 +44,3 @@ process:
     - media: '[Moozzi2] Make Heroine ga Oosugiru! - 12 END (BD 1920x1080 x265-10Bit FLACx2).mkv'
       subtitle: '[Nekomoe kissaten] Make Heroine ga Oosugiru! [12][WebRip].JPSC.ass'
       output: 'Make Heroine ga Oosugiru! - 12.mkv'
-  options:
-    aac: false

@@ -43,5 +43,3 @@ process:
     - media: 'Tsuki ga Kirei [12].mkv'
       subtitle: '月がきれい - 12.chs_jap.ass'
       output: 'Tsuki ga Kirei - 12.mkv'
-  options:
-    aac: false

@@ -44,5 +44,3 @@ process:
     # - media: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [10][Ma10p_1080p][x265_flac].mkv'
     #   subtitle: '[VCB-Studio] Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. [10][Ma10p_1080p][x265_flac].sc.ass'
     #   output: 'Keiken Zumi na Kimi to, Keiken Zero na Ore ga, Otsukiai Suru Hanashi. - 10.mkv'
-  options:
-    aac: false

@@ -1,8 +1,9 @@
 import argparse
 import collections
 import os
+import shlex
+import subprocess
 import tempfile
-import warnings
 from typing import Any
 
 from config import read_config, find_process_font_paths, parse_process_tasks
@@ -10,32 +11,45 @@ from font import build_font_library, create_font_subset
 from subtitle import build_char_map
 
 
-def generate_command(task: dict, font_list: list[str], aac: bool = False) -> str:
+def generate_command(task: dict, font_list: list[str]) -> list[str]:
     media: str = task['media']
     subtitle: str = task['subtitle']
     output: str = task['output']
 
-    attach_command: str = ''
-    for index, font in enumerate(font_list):
+    command_parts: list[str] = [
+        'mkvmerge',
+        '-o',
+        output,
+        '--no-subtitles',
+        '--no-attachments',
+        media,
+        '--language',
+        '0:chi',
+        '--default-track',
+        '0:yes',
+        subtitle,
+    ]
+
+    for font in font_list:
         font_name = os.path.basename(font)
-        font_type = font[-3:]
+        font_type = font[-3:].lower()
         if font_type == 'ttf':
             mime = 'font/ttf'
         elif font_type == 'otf':
             mime = 'font/otf'
         else:
             raise RuntimeError(f'Unknown font type: {font_type}')
-        command = f'-attach "{font}" -metadata:s:t:{index} filename="{font_name}" -metadata:s:t:{index} mimeType="{mime}" '
-        attach_command += command
 
-    if not aac:
-        audio_command = '-c:a copy'
-    else:
-        audio_command = '-c:a libfdk_aac -b:a 320k'
+        command_parts.extend([
+            '--attachment-mime-type',
+            mime,
+            '--attachment-name',
+            font_name,
+            '--attach-file',
+            font,
+        ])
 
-    return (f'ffmpeg -i "{media}" -i "{subtitle}" -map 0:v:0 -map 0:a:0 -map 1:s:0 -c:v copy {audio_command} '
-            f'-c:s ass -metadata:s:s:0 language=chi '
-            f'-disposition:s:0 default ' + attach_command + f'"{output}"')
+    return command_parts
 
 
 def main() -> None:
@@ -50,7 +64,6 @@ def main() -> None:
     font_paths: list[str] = find_process_font_paths(config)
     library: list[dict[str, Any]] = build_font_library(font_paths)
     tasks: list[dict[str, str]] = parse_process_tasks(config)
-    aac: bool = config['process']['options']['aac']
 
     font_library_names: set[str] = set()
     for font in library:
@@ -63,7 +76,7 @@ def main() -> None:
 
         for estimated_font_name in char_map.keys():
             if estimated_font_name not in font_library_names:
-                warnings.warn(f'Warning: Font \'{estimated_font_name}\' not found in font library.')
+                raise RuntimeError(f'Warning: Font \'{estimated_font_name}\' not found in font library.')
 
         designated_fonts: set[str] = set()
         for index, font in enumerate(library):
@@ -80,9 +93,9 @@ def main() -> None:
             for index, charset in result_map.items():
                 font_list.append(create_font_subset(library[index], charset, temp_dir))
 
-            command: str = generate_command(task, font_list, aac)
-            print(command)
-            os.system(command)
+            command: list[str] = generate_command(task, font_list)
+            print(shlex.join(command))
+            subprocess.run(command, check=True)
 
 
 if __name__ == '__main__':

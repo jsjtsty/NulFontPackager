@@ -47,5 +47,3 @@ process:
     - media: '[Nekomoe kissaten] Tonikaku Kawaii [13][BDRip 1080p HEVC-10bit FLAC].mkv'
       subtitle: '[Nekomoe kissaten] Tonikaku Kawaii [13][BDRip 1080p HEVC-10bit FLAC].JPSC.ass'
       output: 'Tonikaku Kawaii - 13.mkv'
-  options:
-    aac: false

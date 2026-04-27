@@ -1,0 +1,31 @@
+version: 1
+
+fonts:
+  # 设置字体搜索路径，包含番剧自带字体包及 Mac 系统路径
+  workspaces:
+    - '/Volumes/T7S-Personal/ACG/Animations/Made in Abyss Movie/Fonts'
+    - '/Library/Fonts'
+    - '/Users/nullsty/Library/Fonts'
+
+process:
+  # 视频和字幕文件所在的根目录
+  workspace: '/Volumes/T7S-Personal/ACG/Animations/Made in Abyss Movie'
+  targets:
+    # 剧场版：深魂的黎明
+    - media: '[SweetSub&VCB-Studio] Made in Abyss Movie 3 Fukaki Tamashii no Reimei [Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Made in Abyss Movie 3 Fukaki Tamashii no Reimei [Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Made in Abyss Movie 3 - Fukaki Tamashii no Reimei.mkv'
+    
+    # 玛璐璐库的日常 01-04
+    - media: '[SweetSub&VCB-Studio] Marulk-chan no Nichijou [01][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Marulk-chan no Nichijou [01][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Marulk-chan no Nichijou - 01.mkv'
+    - media: '[SweetSub&VCB-Studio] Marulk-chan no Nichijou [02][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Marulk-chan no Nichijou [02][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Marulk-chan no Nichijou - 02.mkv'
+    - media: '[SweetSub&VCB-Studio] Marulk-chan no Nichijou [03][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Marulk-chan no Nichijou [03][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Marulk-chan no Nichijou - 03.mkv'
+    - media: '[SweetSub&VCB-Studio] Marulk-chan no Nichijou [04][Ma10p_1080p][x265_flac].mkv'
+      subtitle: '[SweetSub&VCB-Studio] Marulk-chan no Nichijou [04][Ma10p_1080p][x265_flac].chs.ass'
+      output: 'Marulk-chan no Nichijou - 04.mkv'

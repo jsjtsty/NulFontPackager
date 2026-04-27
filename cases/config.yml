@@ -89,5 +89,3 @@ process:
     - media: '[Moozzi2] Boku no Kokoro no Yabai Yatsu - 25 END (BD 1920x1080 HEVC-YUV444P10 FLAC).mkv'
       subtitle: '[Nekomoe kissaten] Boku no Kokoro no Yabai Yatsu [25][Web].JPSC.ass'
       output: 'Boku no Kokoro no Yabai Yatsu - 25.mkv'
-  options:
-    aac: false

@@ -50,6 +50,3 @@ process:
     - media: '[SweetSub&VCB-Studio] Made in Abyss [13][Ma10p_1080p][x265_flac].mkv'
       subtitle: '[SweetSub&VCB-Studio] Made in Abyss [13][Ma10p_1080p][x265_flac].chs.ass'
       output: 'Made in Abyss - 13.mkv'
-  options:
-    # 保持 VCB 的原始 FLAC 音频，不进行 AAC 转码
-    aac: false

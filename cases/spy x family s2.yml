@@ -43,5 +43,3 @@ process:
     - media: '[Moozzi2] Spy x Family S2 - 12 END [ 37 ] (BD 1920x1080 x265-10Bit Flac).mkv'
       subtitle: '[Nekomoe kissaten] SPYxFAMILY [37][Web].JPSC.ass'
       output: 'Spy x Family S2 - 12.mkv'
-  options:
-    aac: false

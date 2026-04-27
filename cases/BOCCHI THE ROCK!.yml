@@ -44,5 +44,3 @@ process:
     - media: '[DMG&VCB-Studio] BOCCHI THE ROCK! [12][Ma10p_1080p][x265_flac].mkv'
       subtitle: '[Nekomoe kissaten] Bocchi the Rock! [12][Web].SC.ass'
       output: 'Bocchi the Rock! - 12.mkv'
-  options:
-    aac: false

@@ -44,5 +44,3 @@ process:
     - media: '[VCB-Studio] Tonikaku Kawaii S2 [12][Ma10p_1080p][x265_flac].mkv'
       subtitle: '[Sakurato] Tonikaku Kawaii S2 [12][HEVC-10bit 1080p AAC][CHS].ass'
       output: 'Tonikaku Kawaii S2 - 12.mkv'
-  options:
-    aac: false

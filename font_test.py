@@ -5,7 +5,7 @@ from font import build_font_information
 
 class FontTestCase(unittest.TestCase):
     def test_build_font_info(self):
-        result = build_font_information(r'FZZZHUNHK.TTF')
+        result = build_font_information(r'/Volumes/T7S-Personal/ACG/Animations/Made in Abyss Movie/Fonts/SourceHanSansSC-Medium.otf')
         print(result)
 
 
